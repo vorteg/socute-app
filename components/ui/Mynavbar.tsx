@@ -1,6 +1,14 @@
 import { Text, Link, Avatar, Dropdown, Navbar } from "@nextui-org/react";
+// Import the Cloudinary classes.
+import { fill } from "@cloudinary/url-gen/actions/resize";
+import { CloudinaryImage } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
 
 export const Mynavbar = () => {
+  const myImage = new CloudinaryImage("v1675966185/socute/socutelogo.png", {
+    cloudName: "dehsikb6h",
+  }).resize(fill().width(36).height(36));
+
   const collapseItems = [
     "Profile",
     "Dashboard",
@@ -25,6 +33,7 @@ export const Mynavbar = () => {
           }}
         >
           {/* <AcmeLogo /> */}
+          <AdvancedImage cldImg={myImage} />
           <Text b color="inherit" hideIn="xs">
             ACME
           </Text>
