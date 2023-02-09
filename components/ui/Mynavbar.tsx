@@ -7,7 +7,7 @@ import { AdvancedImage } from "@cloudinary/react";
 export const Mynavbar = () => {
   const myImage = new CloudinaryImage("v1675966185/socute/socutelogo.png", {
     cloudName: "dehsikb6h",
-  }).resize(fill().width(36).height(36));
+  }).resize(fill().width(60).height(36));
 
   const collapseItems = [
     "Profile",
@@ -34,8 +34,11 @@ export const Mynavbar = () => {
         >
           {/* <AcmeLogo /> */}
           <AdvancedImage cldImg={myImage} />
-          <Text b color="inherit" hideIn="xs">
-            ACME
+          <Text h2 b color="inherit" hideIn="xs">
+            So
+          </Text>
+          <Text h3 b color="inherit" hideIn="xs">
+            Cute
           </Text>
         </Navbar.Brand>
         <Navbar.Content
@@ -44,12 +47,10 @@ export const Mynavbar = () => {
           hideIn="xs"
           variant="highlight-rounded"
         >
-          <Navbar.Link href="#">Veterinarios</Navbar.Link>
-          <Navbar.Link isActive href="#">
-            Perfil
-          </Navbar.Link>
-          <Navbar.Link href="#">Mascotas</Navbar.Link>
-          <Navbar.Link href="#">Ayuda</Navbar.Link>
+          <Navbar.Link href="/">Veterinarios</Navbar.Link>
+          <Navbar.Link href="profile">Perfil</Navbar.Link>
+          <Navbar.Link href="/">Mascotas</Navbar.Link>
+          <Navbar.Link href="/">Ayuda</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
           css={{
