@@ -9,10 +9,10 @@ const initialState: State = {
   darkMode: false,
 };
 
-const useStore = create((set, get) => ({
+const useStore = create((set) => ({
   ...initialState,
   toggleDarkMode: () =>
-    set((state: { darkMode: any }) => ({ darkMode: !state.darkMode })),
+    set((state: { darkMode: boolean }) => ({ darkMode: !state.darkMode })),
 }));
 
 export default useStore;

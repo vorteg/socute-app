@@ -1,9 +1,10 @@
+"use client";
 import { Layout } from "../components/layouts";
 
 export default function Home() {
   return (
-    <Layout title="probando">
-      <h1>holamundo</h1>
+    <Layout title="So cute :)">
+      <h1>Welcome</h1>
     </Layout>
   );
 }

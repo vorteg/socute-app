@@ -35,12 +35,12 @@ export const Mynavbar = () => {
           hideIn="xs"
           variant="highlight-rounded"
         >
-          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link href="#">Veterinarios</Navbar.Link>
           <Navbar.Link isActive href="#">
-            Customers
+            Perfil
           </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+          <Navbar.Link href="#">Mascotas</Navbar.Link>
+          <Navbar.Link href="#">Ayuda</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
           css={{
